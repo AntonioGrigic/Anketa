@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <header>
+            <h1 class="main-title">Ankete</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    Ankete
+                </li>
+                <li class="breadcrumbs-item current">
+                    Nova anketa
+                </li>
+            </ul>
+        </header>
+        <section class="container">
+            <div class="stage-container">
+                <div class="icons is-active">
+                    <div class="icon-bg create-icon"><i class="fas fa-pen"></i></div>
+                    <p>Uređivanje</p>
+                </div>
+                <div class="icons">
+                    <div class="icon-bg result-icon"><i class="far fa-chart-bar"></i></div>
+                    <p>Rezultati</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2 class="form-title" contenteditable="true">Nova anketa</h2>
+                <ol class="question-container" id="question-container">
+                    <li class="question">
+                        <button class="close-question">X</button>
+                        <p class="add-answer">Dodaj odgovor</p>
+                        <p class="multi-choice"></p>
+                        <p class="mutli-choice-text">Višestruki odabir</p>
+                        <p class="question-title">Zbog čega ste se odlučili pohađati ovu edukaciju?</p>
+                        <div class="answer">
+                            <input id="odg1-1" class="answer-input" name="answer-1" type="checkbox" value="odg1">
+                            <label for="odg1-1" class="answer-label">Po preporuci</label>
+                            <button class="close">X</button>
+                            <br>
+                        </div>
+                        <div class="answer">
+                            <input id="odg2-1" class="answer-input" name="answer-1" type="checkbox" value="odg2">
+                            <label for="odg2-1" class="answer-label">Svidio mi se sadržaj</label>
+                            <button class="close">X</button>
+                            <br>
+                        </div>
+                        <div class="answer">
+                            <input id="odg3-1" class="answer-input" name="answer-1" type="checkbox" value="odg3">
+                            <label for="odg3-1" class="answer-label">Želim produbiti postojeće znanje o tematici</label>
+                            <button class="close">X</button>
+                            <br>
+                        </div>
+                        <div class="answer">
+                            <input id="odg4-1" class="answer-input" name="answer-1" type="checkbox" value="odg4">
+                            <label for="odg4-1" class="answer-label">Po zahtjevu poslodavca</label>
+                            <button class="close">X</button>
+                            <br>
+                        </div>
+                        <div class="answer">
+                            <input id="odg5-1" class="answer-input" name="answer-1" type="checkbox" value="odg5">
+                            <label for="odg5-1" class="answer-label">Mislim da će mi pomoći u razvoju karijere</label>
+                            <button class="close">X</button>
+                            <br>
+                        </div>
+                        <div class="answer">
+                            <input id="odg6-1" class="answer-input" name="answer-1" type="checkbox" value="odg6">
+                            <label for="odg6-1" class="answer-label">Drugi razlozi</label>
+                            <button class="close">X</button>
+                        </div>
+                    </li>
+                </ol>
+                <div class="add-question-box">
+                    <button class="add-question">Dodaj pitanje</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            
+        </footer>
+    </body>
+    <script src="./script/main.js"></script>
+</html>

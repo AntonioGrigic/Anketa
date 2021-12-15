@@ -1,0 +1,422 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body {
+  font-family: 'Roboto',serif;
+  padding: 0 30px;
+  color: #4a4a4a;
+}
+
+.main-title {
+  font-weight: 700;
+  position: relative;
+  padding-left: 10px;
+}
+
+.main-title:before {
+  content: '';
+  border-right: 5px solid #efb52d;
+  display: inline-block;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-top: 35px;
+}
+
+.breadcrumbs-item::marker {
+  content: none;
+}
+
+.breadcrumbs-item:nth-child(n+2) {
+  margin-left: 5px;
+}
+
+.breadcrumbs-item:nth-child(n+2):before {
+  content: '/';
+  width: auto;
+  height: auto;
+  display: inline-block;
+  color: #4a4a4a;
+  padding: 0 5px 0 1px;
+}
+
+.breadcrumbs-item:last-child {
+  color: #efb52d;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.stage-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.stage-container:after {
+  content: '';
+  position: absolute;
+  width: 84%;
+  top: 21%;
+  border-bottom: 1px solid #d0d0d0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #969696;
+}
+
+.icons.is-active {
+  color: #efb52b;
+}
+
+.icon-bg {
+  width: 40px;
+  height: 40px;
+  background-color: #fdf6e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.form-container {
+  -webkit-box-shadow: 0px 0px 5px -4px #000000;
+          box-shadow: 0px 0px 5px -4px #000000;
+  min-height: 350px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-title {
+  margin: 20px auto;
+  padding: 20px 65px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+  color: #efb52b;
+}
+
+.form-title:after {
+  content: '\f304';
+  font-family: "Font Awesome 5 Pro";
+  right: -90px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, right 0.5s;
+  transition: opacity 0.5s, right 0.5s;
+  position: absolute;
+  color: #969696;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 9px -4px #000000;
+          box-shadow: 0px 2px 9px -4px #000000;
+  font-weight: 900;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 1;
+  top: 11px;
+}
+
+.form-title:hover:after {
+  right: -26px;
+  opacity: 1;
+}
+
+.question-container {
+  margin-left: 15%;
+  width: 50%;
+}
+
+.question {
+  position: relative;
+}
+
+.question:after {
+  content: '\f304';
+  font-family: "Font Awesome 5 Pro";
+  right: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, right 0.5s;
+  transition: opacity 0.5s, right 0.5s;
+  position: absolute;
+  color: #969696;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 9px -4px #000000;
+          box-shadow: 0px 2px 9px -4px #000000;
+  font-weight: 900;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 1;
+  top: 11px;
+}
+
+.question:hover:after {
+  right: 90px;
+  opacity: 1;
+}
+
+.question::marker {
+  color: #efb52b;
+}
+
+.question.edit-mode {
+  padding-bottom: 75px;
+}
+
+.question.edit-mode .question-title {
+  padding: 10px;
+  border: 1px solid #cee6f1;
+  border-radius: 5px;
+}
+
+.question.edit-mode .answer-label {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.question.edit-mode .close,
+.question.edit-mode .close-question {
+  display: inline-block;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  right: 2px;
+}
+
+.question.edit-mode .close-question {
+  top: 9px;
+}
+
+.question.edit-mode .close {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.question.edit-mode .add-answer,
+.question.edit-mode .multi-choice,
+.question.edit-mode .mutli-choice-text {
+  display: inline-block;
+}
+
+.question.edit-mode:after {
+  opacity: 0;
+}
+
+.answer {
+  display: inline-block;
+  position: relative;
+  right: 8px;
+}
+
+.close,
+.close-question {
+  display: none;
+}
+
+.question-title {
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  padding: 10px;
+}
+
+.answer-label {
+  width: 350px;
+  padding: 5px;
+  padding-right: 16px;
+  display: inline-block;
+}
+
+.answer-input {
+  margin: 10px 5px 10px 3rem;
+}
+
+.add-question-box {
+  width: 170px;
+  margin: 30px auto;
+}
+
+.add-answer {
+  bottom: 40px;
+}
+
+.add-answer:before {
+  content: '\f067';
+  font-family: "Font Awesome 5 Pro";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  right: 10px;
+  color: white;
+  border-radius: 50%;
+  background: #efb52b;
+  width: 25px;
+  height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.multi-choice {
+  width: 60px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #4a4a4a;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  bottom: 0;
+  border-radius: 34px;
+}
+
+.multi-choice:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 2px;
+  background-color: #efb52b;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.multi-choice.checked:before {
+  -webkit-transform: translateX(36px);
+          transform: translateX(36px);
+}
+
+.add-answer,
+.multi-choice,
+.mutli-choice-text {
+  display: none;
+  position: absolute;
+  color: #efb52b;
+  margin: 0;
+  left: 45px;
+  cursor: pointer;
+}
+
+.mutli-choice-text {
+  bottom: 0;
+  left: 120px;
+}
+
+.add-question {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  background: transparent;
+  border: 1px solid #efb52b;
+  border-radius: 5px;
+  color: #4a4a4a;
+  font-size: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#efb52b), to(#efb52b));
+  background-image: linear-gradient(#efb52b, #efb52b);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 0% 0%;
+  -webkit-transition: background-size .5s, color .5s;
+  transition: background-size .5s, color .5s;
+  cursor: pointer;
+}
+
+.add-question:before {
+  content: '\f067';
+  font-family: "Font Awesome 5 Pro";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  right: 10px;
+  color: white;
+  border-radius: 50%;
+  background: #efb52b;
+  width: 25px;
+  height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-question:hover {
+  color: white;
+  background-size: 100% 100%;
+}
+
+.add-question:hover:before {
+  background: white;
+  color: #efb52b;
+}
+/*# sourceMappingURL=style.css.map */
