@@ -1,6 +1,5 @@
 let breadcrumbs = document.querySelector('.breadcrumbs-item.current');
 let mainTitle = document.querySelector('.form-title');
-let resultTitle = document.querySelector('.result-title');
 let allQuestions = {};
 let arrayPosition = {};
 let questionNumber = {};
@@ -10,10 +9,8 @@ mainTitle.onkeydown = function(e) {
     if(e.key == 'Enter') {
         this.blur();
         breadcrumbs.innerHTML = this.innerHTML;
-        resultTitle.innerHTML = this.innerHTML;
     } else {
         breadcrumbs.innerHTML = this.innerHTML;
-        resultTitle.innerHTML = this.innerHTML;
     };
 };
 
